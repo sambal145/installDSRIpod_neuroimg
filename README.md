@@ -1,13 +1,13 @@
-# Install essential dependencies and neuroimaging softwares on Maastricht University's DSRI cluster
+# Install essential dependencies and neuroimaging softwares on Maastricht University DSRI cluster
 
-Maastricht University's Data Science Research Infrastructure (DSRI) is an OKD 4.6 cluster, the open source version of OpenShift, using RedHat Ceph Storage.
+Maastricht University Data Science Research Infrastructure (DSRI) is an OKD 4.6 cluster, the open source version of OpenShift, using RedHat Ceph Storage.
 The DSRI provides a graphical user interface on top of the Kubernetes containers orchestration to easily deploy and manage workspaces and services.
 Usage documentation can be found at: https://maastrichtu-ids.github.io/dsri-documentation/docs/ 
 
 The present scripts are meant to build a neuroimaging friendly environment on a pod with an Ubuntu 20.04 with web User Interface. 
 They require minimal user interaction and automatize the installation of: 
-* Essential dependencies
-* Specific neuroimaging softwares
+* [Essential dependencies](#install_essentials.sh)
+* [Specific neuroimaging softwares](#install_softwares.sh)
 
 ## Requirements
 
