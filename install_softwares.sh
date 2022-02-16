@@ -164,10 +164,10 @@ if [[ "$FIX" == "ON" ]];
 	cd ~
 	for package in $PACKAGES
 	do
-    wget "$MIRROR"/src/contrib/Archive/$(echo "$package" | cut -f1 -d_)/"$package".tar.gz || \
+	wget "$MIRROR"/src/contrib/Archive/$(echo "$package" | cut -f1 -d_)/"$package".tar.gz || \
         wget "$MIRROR"/src/contrib/"$package".tar.gz
-    R CMD INSTALL "$package".tar.gz
-    done
+	R CMD INSTALL "$package".tar.gz
+	done
     
    #================== Install FIX =======================================================
 	
