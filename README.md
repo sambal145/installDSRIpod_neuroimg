@@ -25,8 +25,7 @@ This script installs essential packages that are
 No user interaction is required for this step. The script can simply be launched as follow: 
 
 ```
-$ cd <location where script has been saved>
-$ bash install_essentials.sh
+$ sh /<location where script has been saved>/install_essentials.sh
 ```
 ## install_softwares.sh
 
@@ -40,8 +39,7 @@ This script installs neuroimaging softwares including:
 The script can be launched as follow:
 
 ```
-$ cd <location where script has been saved>
-$ bash install_softwares.sh --fsl=ON --fslfix=ON --freesurfer=ON --ants=OFF --hcppipelines=OFF --pathedits=ON
+$ bash /<location where script has been saved>/install_softwares.sh --fsl=ON --fslfix=ON --freesurfer=ON --ants=OFF --hcppipelines=OFF --pathedits=ON
 ```
 The exact usage can be seen in script, but here a few notes for the user: 
 * Make sure to have a container with sufficient storage running on your pod
