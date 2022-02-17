@@ -22,9 +22,6 @@ EOF
 #  Start installation
 # ----------------------------------------------------------------------------------------
 
-
-
-
 ### install various libraries
 apt-get install -y bc 
 apt-get install -y binutils 
@@ -59,7 +56,7 @@ apt-get install -y perl
 apt-get install -y psmisc 
 apt-get install -y sqlite3
 apt-get install -y tcsh
-apt-get install -y unzip 
+apt-get install -y unzip
 apt-get install -y uuid-dev 
 apt-get install -y vim-common 
 apt-get install -y zlib1g-dev
