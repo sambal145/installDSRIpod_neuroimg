@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # ----------------------------------------------------------------------------------------
 #  Usage Description Function
@@ -76,3 +76,10 @@ apt install -y python2-minimal
 apt-get install -y r-base 
 apt-get install -y r-cran-devtools
 
+### install cmake
+wget --no-clobber --directory-prefix=/root/Downloads https://github.com/Kitware/CMake/releases/download/v3.23.0-rc1/cmake-3.23.0-rc1.tar.gz 
+tar -C /root -xzvf ./Downloads/cmake-3.23.0-rc1.tar.gz
+cd cmake-3.23.0-rc1
+./bootstrap
+make
+make install
