@@ -15,7 +15,7 @@ installdir=/root/installs    # CHANGE THIS TO INSTALL LOCATION (if different)
 unzip -n ${download}/matlab_R2021b_glnxa64.zip -d ${installdir}/matlab
 
 # run the installer
-cd ${installdir}/matlab/matlab_R2021b_glnxa64
+cd ${installdir}/matlab
 ./install
 
 # it will ask you again to log in to your account (username: university email, password)
