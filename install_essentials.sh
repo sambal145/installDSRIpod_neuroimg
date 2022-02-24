@@ -27,6 +27,7 @@ apt-get install -y bc
 apt-get install -y binutils 
 apt-get install -y build-essential
 apt-get install -y freeglut3-dev
+apt-get install -y freetype2-doc
 apt-get install -y git
 apt-get install -y gsl-bin
 apt-get install -y libblas-dev 
@@ -60,6 +61,9 @@ apt-get install -y unzip
 apt-get install -y uuid-dev 
 apt-get install -y vim-common 
 apt-get install -y zlib1g-dev
+
+add-apt-repository ppa:linuxuprising/libpng12
+apt-get install -y libpng12-0
 
 ### install pip3 and NumPy
 wget https://bootstrap.pypa.io/get-pip.py -O get-pip.py
