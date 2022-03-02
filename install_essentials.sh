@@ -42,6 +42,7 @@ apt-get install -y liblapack-dev
 apt-get install -y libncurses5-dev 
 apt-get install -y libncursesw5-dev
 apt-get install -y libnlopt-dev
+apt-get install -y libopenblas-dev
 apt-get install -y libpng-dev
 apt-get install -y libqwt-qt5-dev
 apt-get install -y libssl-dev 
