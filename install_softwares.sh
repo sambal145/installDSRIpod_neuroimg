@@ -337,9 +337,9 @@ if [[ "$HCP" == "ON" ]];
 	#================== Install MSM (multi-modal surface matching) =======================
 	
 	# download source tar file from MSM_HOCR v3.0 (https://github.com/ecr05/MSM_HOCR/releases)
-	wget --no-clobber --directory-prefix=${download} https://github.com/ecr05/MSM_HOCR/archive/refs/tags/v3.0FSL.tar.gz
+	wget --no-clobber --directory-prefix=${download} https://github.com/ecr05/MSM_HOCR/releases/download/v3.0FSL/MSM_HOCR_v3.zip
 	# unzip folder in /root/
-	tar -C ${installdir} -xzvf ${download}/v3.0FSL.tar.gz
+	unzip -n ${download}/MSM_HOCR_v3.zip -d ${installdir}
 	
 	if [[ "$PATHEDITS" == "ON" ]] && [[ $(grep -L "$MSMBINDIR" ~/.bashrc) ]];
 	then
