@@ -182,7 +182,7 @@ if [[ "$FIX" == "ON" ]];
    tar -C ${installdir}/ -xzvf ${download}/fix.tar.gz
    
    # edit the settings.sh file to point to Matlab Runtime Compiler location:
-   sed -i "s+FSL_FIX_MCRROOT="\""/opt/fmrib/MATLAB/MATLAB_Compiler_Runtime"+FSL_FIX_MCRROOT="\""${installdir}/matlab/v93"+" ${installdir}/fix/settings.sh
+   sed -i "s+FSL_FIX_MCRROOT="\""/opt/fmrib/MATLAB/MATLAB_Compiler_Runtime"+FSL_FIX_MCRROOT="\""${installdir}/matlab/MATLAB_Runtime"+" ${installdir}/fix/settings.sh
    # line 46
    
    if [[ "$PATHEDITS" == "ON" ]] && [[ $(grep -L "$FSL_FIXDIR" ~/.bashrc) ]];
