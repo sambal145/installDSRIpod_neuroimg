@@ -69,7 +69,7 @@ apt-get install -y libpng12-0
 ### install pip3 and NumPy
 wget https://bootstrap.pypa.io/get-pip.py -O get-pip.py
 python3.8 get-pip.py
-python3.8 -m pip install -y numpy
+python3.8 -m pip install numpy
 pip3 install --upgrade numpy
 
 ### install python 2
