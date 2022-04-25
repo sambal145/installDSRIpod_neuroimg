@@ -329,7 +329,7 @@ if [[ "$HCP" == "ON" ]];
 	if [[ "$PATHEDITS" == "ON" ]] && [[ $(grep -L "$CARET7DIR" ~/.bashrc) ]];
 	then
 	echo '' >> ~/.bashrc
-	echo 'CONNECTOME WORKBENCH setup:' >> ~/.bashrc
+	echo '# CONNECTOME WORKBENCH setup:' >> ~/.bashrc
 	echo "export CARET7DIR=${installdir}/workbench/bin_linux64" >> ~/.bashrc
 	echo 'export PATH=${PATH}:/${CARET7DIR}' >> ~/.bashrc
 	fi
